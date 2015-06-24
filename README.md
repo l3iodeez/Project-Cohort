@@ -12,4 +12,5 @@ Cohort will be an online character sheet manager and dice roller for use with ta
 9. A logged in user who is the GM can enter a call of the form 'party#ability' to roll that ability for everyone in the party. 
 10. A logged in user can create a new ability for a character, and then call it from chat like a preexisting ability. They should be able to define something like #newability = '1d20 + DEX + 8' where DEX is the current character's dexterity bonus, or #othernewability = 'character#basefullattackmelee + 5' In the latter case the output should be to roll the correct number of attacks for the character's level. Time permitting, also allowing something like 'character.haste#basefullattackmelee + 5' to include the effects of spells that effect the number of attack rolls. Rapid Shot and Multishot come to mind. 
 11. A logged in user who is the GM should be able to flash images on the players' displays and play audio to them as well. 
-12. A logged in user should be able to load the application as a Google Hangout plugin. 
+12. A logged in user should be able to load the application as a Google Hangout plugin.
+13. (optional) A logged in user may toggle privacy settings for their character sheets to a) self only, b) DM + self, c) all users in campaign.
