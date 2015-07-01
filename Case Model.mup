@@ -1,0 +1,51 @@
+{
+  "title": "project cohort",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "1": {
+      "title": "registered user",
+      "id": 2,
+      "ideas": {
+        "1": {
+          "title": "create character",
+          "id": 3
+        },
+        "2": {
+          "title": "create campaign",
+          "id": "4.gd515eccc1791ffea5",
+          "ideas": {
+            "1": {
+              "title": "campaign creators can view all char sheets that have joined the campaign",
+              "id": "12.gd515eccc1791ffea5"
+            }
+          }
+        },
+        "3": {
+          "title": "add character to existing campaign",
+          "id": "5.gd515eccc1791ffea5",
+          "ideas": {
+            "1": {
+              "title": "DM selects PC char to add to campaign",
+              "id": "9.gd515eccc1791ffea5"
+            },
+            "2": {
+              "title": "PC selects char and uses it to join campaign",
+              "id": "10.gd515eccc1791ffea5"
+            }
+          }
+        }
+      }
+    },
+    "-1": {
+      "title": "unregistered user",
+      "id": "6.gd515eccc1791ffea5",
+      "ideas": {
+        "1": {
+          "title": "create account\n- email\n- password",
+          "id": "7.gd515eccc1791ffea5"
+        }
+      }
+    }
+  }
+}
