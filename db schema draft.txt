@@ -1,0 +1,96 @@
+  def change
+    create_table(:characters) do |t|
+      t.belongs_to :user, index: true
+      t.has_and_belongs_to_many :campaigns
+
+
+      ## Vitals
+      t.string :name
+      t.string :race
+      t.string :class
+      t.integer :level
+      t.integer :size
+
+      ## character image object with paperclip
+
+      ## Abilities 
+      t.integer :STR
+      t.integer :DEX
+      t.integer :CON
+      t.integer :INT
+      t.integer :WIS
+      t.integer :CHA
+
+      ## Armor & AC
+      t.integer :AC_armor
+      t.integer :AC_shield
+      t.integer :AC_natural
+      t.integer :AC_deflect
+      t.integer :AC_misc
+      t.integer :ACP
+
+      ## Skills oof
+
+      ## HP
+      t.integer :max_HP
+      t.integer :current_HP
+      t.integer :temp_HP
+      t.integer :nonlethal
+
+
+      t.timestamps null: false
+    end
+    create_table(:campaigns) do |t|
+      t.belongs_to :user, index: true
+      t.has_and_belongs_to_many :characters
+      t.string :name
+      t.string :description
+
+      ## Campaign image here using paperclip
+
+      t.timestamps null: false
+    end
+    create_table :characters_campaigns, id: false do |t|
+      t.belongs_to :character, index: true
+      t.belongs_to :campaign, index: true
+
+      t.timestamps null: false
+    end
+
+
+
+
+    create_table(:users) do |t|
+      t.has_many :characters
+      t.has_many :campaigns
+
+      t.string :email,              null: false, default: ""
+      t.string :encrypted_password, null: false, default: ""
+
+      ## Recoverable
+      t.string   :reset_password_token
+      t.datetime :reset_password_sent_at
+
+      ## Rememberable
+      t.datetime :remember_created_at
+
+      ## Trackable
+      t.integer  :sign_in_count, default: 0, null: false
+      t.datetime :current_sign_in_at
+      t.datetime :last_sign_in_at
+      t.inet     :current_sign_in_ip
+      t.inet     :last_sign_in_ip
+
+      ## Confirmable
+      t.string   :confirmation_token
+      t.datetime :confirmed_at
+      t.datetime :confirmation_sent_at
+      t.string   :unconfirmed_email # Only if using reconfirmable
+
+      t.timestamps null: false
+    end
+
+
+
+    add_index :users, :email,                unique: true
+  end
