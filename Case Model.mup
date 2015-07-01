@@ -14,24 +14,36 @@
         "2": {
           "title": "create campaign",
           "id": "4.gd515eccc1791ffea5",
+          "ideas": {}
+        },
+        "4": {
+          "title": "view/edit/delete owned characters",
+          "id": "13.gd6698e9bea63c0f5",
           "ideas": {
             "1": {
-              "title": "campaign creators can view all char sheets that have joined the campaign",
-              "id": "12.gd515eccc1791ffea5"
+              "title": "display a character",
+              "id": "16.gd6698e9bea63c0f5",
+              "ideas": {},
+              "attr": {
+                "style": {}
+              }
             }
           }
         },
-        "3": {
-          "title": "add character to existing campaign",
-          "id": "5.gd515eccc1791ffea5",
+        "5": {
+          "title": "view/edit/delete owned campaigns",
+          "id": "17.gd6698e9bea63c0f5",
           "ideas": {
-            "1": {
-              "title": "DM selects PC char to add to campaign",
-              "id": "9.gd515eccc1791ffea5"
-            },
             "2": {
-              "title": "PC selects char and uses it to join campaign",
-              "id": "10.gd515eccc1791ffea5"
+              "title": "generate join link for IM or email",
+              "id": "19.gd6698e9bea63c0f5"
+            },
+            "3": {
+              "title": "view character sheets that belong to campaign",
+              "id": "12.gd515eccc1791ffea5",
+              "attr": {
+                "style": {}
+              }
             }
           }
         }
@@ -47,5 +59,6 @@
         }
       }
     }
-  }
+  },
+  "links": []
 }
