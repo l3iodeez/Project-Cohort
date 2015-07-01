@@ -1,11 +1,11 @@
 # Project Cohort
 Cohort will be an online character sheet manager and dice roller for use with tabletop RPGs. Currently we are writing user stories which can be found below:
 
-1) An un-registered user can create an account.
-2) A logged in user can create a new character and enter his/her stats in a reproduction of the pathfinder fillable character sheet. Bare bones: Stats, Skills, CMB, CMD, Saves
-3) A logged in user can create a new campaign and designate other users that may join the campaign, either by selecting their user names via search or by using a tokenized link. (minimum: list all users and have searchable list using jQueryUI: https://www.google.com/url?q=https%3A%2F%2Fjqueryui.com%2Fautocomplete%2F&sa=D&sntz=1&usg=AFQjCNGsaK-_gp5rlhmo6Ep28p1dXIQeXw)
-4) A logged in user can add a character they have created to a campaign created by another user (join a campaign) OR have DM able to select char from user
-5) A logged in user can view the character sheets of any characters that have joined a campaign that the user owns.
+1. An un-registered user can create an account.
+2. A logged in user can create a new character and enter his/her stats in a reproduction of the pathfinder fillable character sheet. Bare bones: Stats, Skills, CMB, CMD, Saves
+3. A logged in user can create a new campaign and designate other users that may join the campaign, either by selecting their user names via search or by using a tokenized link. (minimum: list all users and have searchable list using jQueryUI: https://www.google.com/url?q=https%3A%2F%2Fjqueryui.com%2Fautocomplete%2F&sa=D&sntz=1&usg=AFQjCNGsaK-_gp5rlhmo6Ep28p1dXIQeXw)
+4. A logged in user can add a character they have created to a campaign created by another user (join a campaign) OR have DM able to select char from user
+5. A logged in user can view the character sheets of any characters that have joined a campaign that the user owns.
 
 # Later features
 
