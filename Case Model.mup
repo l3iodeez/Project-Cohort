@@ -1,0 +1,64 @@
+{
+  "title": "project cohort",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "1": {
+      "title": "registered user",
+      "id": 2,
+      "ideas": {
+        "1": {
+          "title": "create character",
+          "id": 3
+        },
+        "2": {
+          "title": "create campaign",
+          "id": "4.gd515eccc1791ffea5",
+          "ideas": {}
+        },
+        "4": {
+          "title": "view/edit/delete owned characters",
+          "id": "13.gd6698e9bea63c0f5",
+          "ideas": {
+            "1": {
+              "title": "display a character",
+              "id": "16.gd6698e9bea63c0f5",
+              "ideas": {},
+              "attr": {
+                "style": {}
+              }
+            }
+          }
+        },
+        "5": {
+          "title": "view/edit/delete owned campaigns",
+          "id": "17.gd6698e9bea63c0f5",
+          "ideas": {
+            "2": {
+              "title": "generate join link for IM or email",
+              "id": "19.gd6698e9bea63c0f5"
+            },
+            "3": {
+              "title": "view character sheets that belong to campaign",
+              "id": "12.gd515eccc1791ffea5",
+              "attr": {
+                "style": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "-1": {
+      "title": "unregistered user",
+      "id": "6.gd515eccc1791ffea5",
+      "ideas": {
+        "1": {
+          "title": "create account\n- email\n- password",
+          "id": "7.gd515eccc1791ffea5"
+        }
+      }
+    }
+  },
+  "links": []
+}
