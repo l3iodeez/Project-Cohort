@@ -1,0 +1,60 @@
+/*/////////////////FONTS/////////////////*/
+
+@font-face {
+	font-family: 'Nevis';
+	src: url(../fonts/nevis.ttf);
+}
+
+@font-face {
+	font-family: 'Neutra';
+	src: url(../fonts/NeutraDisp-Medium.otf);
+}
+
+*{
+	font-family: 'Nevis', Arial, sans-serif;
+}
+
+/*LAYOUT*/
+
+html {
+	min-height: 100%;
+	height: 100%;
+}
+
+body {
+}
+
+.middleify {
+
+}
+
+h1 {
+	font-family: 'Nevis', Arial, sans-serif;
+}
+
+p {
+	font-family: 'Neutra', Arial, sans-serif;
+}
+
+/*/////////////////NAVIGATION/////////////////*/
+
+
+
+/*/////////////////LOGO/////////////////*/
+
+.logo img {
+
+}
+
+/*/////////////////FOOTER/////////////////*/
+
+footer {
+
+}
+
+
+/*/////////////////RESPONSIVE/////////////////*/
+
+@media only screen and (max-width: 900px ) {
+
+}
