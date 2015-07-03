@@ -3,16 +3,39 @@
       t.belongs_to :user, index: true
       t.has_and_belongs_to_many :campaigns
 
-
       ## Vitals
+      t.references :user, index: true
       t.string :name
-      t.strong :pc_name
       t.string :race
-      t.string :class
-      t.integer :level
+      t.text :classes ## [{"class" => "Bard", "level" => 5},{"class" => "Rogue", "level" => 2}]
       t.integer :size
+      t.string :sex
+      t.string :height
+      t.string :weight
+      t.string :eyes
+      t.string :skin
+      t.string :hair
+      t.integer :age
+      t.string :alignment
+      t.string :deity
+      t.integer :init
+      t.text :speed ## {"base" => 30, "armor" => 15, "fly" => 15, "swim" => 0, "climb" => 15, "burrow" => 0}
+      t.string :languages
 
-      ## character image object with paperclip
+      ## Defense
+      t.text :dr ## {“silver” => 5, “cold iron” => 5}
+      t.integer :SR
+      t.integer :res_fire
+      t.integer :res_ice
+      t.integer :res_lightning
+      t.integer :res_acid
+      t.integer :res_sonic
+      t.integer :bonus_CMB
+
+      ## Offense
+      t.integer :BAB
+      t.integer :bonus_CMD
+
 
       ## Abilities 
       t.integer :STR
@@ -25,12 +48,12 @@
       ## Armor & AC
       t.integer :AC_armor
       t.integer :AC_shield
+      t.integer :AC_dodge
       t.integer :AC_natural
       t.integer :AC_deflect
       t.integer :AC_misc
       t.integer :ACP
 
-      ## Skills oof
 
       ## HP
       t.integer :max_HP
@@ -38,25 +61,74 @@
       t.integer :temp_HP
       t.integer :nonlethal
 
+      ##Saves
+      t.integer :fortitude
+      t.integer :reflex
+      t.integer :will
+      t.integer :temp_fortitude
+      t.integer :temp_reflex
+      t.integer :temp_will
+
+      ## Skills 
+      t.text :acrobatics ## {:class => true, :ranks => 8, :bonus => 0}
+      t.text :appraise
+      t.text :bluff
+      t.text :climb
+      t.text :craft       ## {:arms_and_armor => {:class => true, :ranks =>  8, :bonus => 0}, :alchemy => {:class => false, :ranks =>  3, :bonus => 0}}
+      t.text :diplomacy
+      t.text :disable_device
+      t.text :disguise
+      t.text :escape_artist
+      t.text :fly
+      t.text :handle_animal
+      t.text :heal
+      t.text :intimidate
+      t.text :knowledge     
+      t.text :linguistics
+      t.text :perception
+      t.text :perform
+      t.text :profession  
+      t.text :ride
+      t.text :sense_motive
+      t.text :slight_of_hand
+      t.text :spellcraft
+      t.text :stealth
+      t.text :survival
+      t.text :swim
+      t.text :use_magic_device
+
+      ##Attacks
+      t.text :attacks ## [{:type => "melee", :name => “BigassSword”, :bonuses => [20,15,10,5], :damage =>[{"numDice": 2, "dieSides": 8, "constant": 5},{"numDice": 1, "dieSides": 6, "constant": 0}], :crit_range => 19, :special => "+2 against bloogies"},{...},]
+
+     ## Other Fields
+      t.text :spells
+      t.text :abilities
+      t.text :description
+      t.attachment :image ## make sure paperclip is loaded first
+      
 
       t.timestamps null: false
     end
+
     create_table(:campaigns) do |t|
       t.belongs_to :user, index: true
       t.has_and_belongs_to_many :characters
       t.string :name
       t.string :description
 
-      ## Campaign image here using paperclip
+      t.attachment :image ## make sure paperclip is loaded first
 
       t.timestamps null: false
     end
+
     create_table :characters_campaigns, id: false do |t|
       t.belongs_to :character, index: true
       t.belongs_to :campaign, index: true
 
       t.timestamps null: false
     end
+
+
 
 
     create_table(:users) do |t|
@@ -93,3 +165,5 @@
 
     add_index :users, :email,                unique: true
   end
+
+
