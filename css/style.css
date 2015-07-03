@@ -13,6 +13,66 @@
 *{
 	font-family: 'Nevis', Arial, sans-serif;
 }
+/*/////////////////NAVIGATION/////////////////*/
+
+
+/*/////////////////HEADER/////////////////*/
+
+.logo {
+	background-image: url("../images/Cohort.PNG");
+	background-repeat: no-repeat;
+	height: 150px;
+}
+
+.navbar {
+	width: auto;
+	height: 180px;
+	background-color: #93c47d; /*weird ooky green*/
+}
+
+.navbar, .logo {
+	padding-left: 20px;
+	padding-top: 10px;
+}
+
+menu {
+	display:inline;
+	position: absolute;
+	right: 10px;
+	top: 0px;
+	font-size: 0.65em;
+}
+
+/*/////////////////NAVIGATION/////////////////*/
+
+/* unvisited link */
+a {
+	color: #000;
+    text-decoration: none;
+}
+/* unvisited link */
+a:link {
+    color: #000;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #93c47d; /*weird ooky green*/
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: #93c47d; /*weird ooky green*/
+    text-decoration: none;
+}
 
 /*/////////////////LAYOUT/////////////////*/
 
@@ -25,6 +85,11 @@ html, body {
 h1 {
 	font-family: 'Nevis', Arial, sans-serif;
 	font-size: 1.0em;
+}
+
+h2 {
+	font-family: 'Nevis', Arial, sans-serif;
+	font-size: 0.75em;
 }
 
 p {
@@ -65,10 +130,12 @@ p {
 .screenshot-25 {
 	width: 25%;
 	display: inline-block;
-	background-color: grey;
+	background-color: #fff;
 	vertical-align: top;
 	margin-left: 3%;
 	margin-right: 3%;
+	padding: 5px;
+	box-shadow: 3px 3px 2px #282828;
 }
 
 .screenshot-25 img {
@@ -77,31 +144,23 @@ p {
 	margin-right: auto;
 }
 
-/*/////////////////HEADER/////////////////*/
-
-.logo {
-	background-image: url("../images/Cohort.PNG");
-	background-repeat: no-repeat;
-	height: 150px;
+.screenshot-25 h2 {
+	text-align: center;
 }
-
-.navbar {
-	width: 100%;
-	height: 180px;
-	background-color: #93c47d;
-}
-
-.navbar, .logo {
-	padding-left: 20px;
-	padding-top: 10px;
-}
-
-/*/////////////////NAVIGATION/////////////////*/
 
 /*/////////////////FOOTER/////////////////*/
 
 footer {
+	position: fixed;
+	width: 100%;
+	bottom: 0px;
+	background-color: #68868c; /*weird teal color*/
+}
 
+footer p {
+	text-align: center;
+	font-size: 0.85em;
+	color: #fff;
 }
 
 
