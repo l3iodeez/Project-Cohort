@@ -13,8 +13,6 @@
 *{
 	font-family: 'Nevis', Arial, sans-serif;
 }
-/*/////////////////NAVIGATION/////////////////*/
-
 
 /*/////////////////HEADER/////////////////*/
 
@@ -64,7 +62,7 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-    color: #93c47d; /*weird ooky green*/
+    color: #fd6b22; /*a most excellent orange*/
     text-decoration: none;
 }
 
@@ -148,6 +146,12 @@ p {
 	text-align: center;
 }
 
+ul li {
+	font-family: 'Neutra', Arial, sans-serif;
+	font-size: 0.8em;
+	padding-bottom: 10px;
+}
+
 /*/////////////////FOOTER/////////////////*/
 
 footer {
@@ -163,6 +167,15 @@ footer p {
 	color: #fff;
 }
 
+/*/////////////////BUTTONS/////////////////*/
+button {
+	display: inline-block;
+	background-color: #fd6b22; /*a most excellent orange*/
+	margin-left: 20px;
+	width: 90%;
+	height: 100px;
+	border: 0;
+}
 
 /*/////////////////RESPONSIVE/////////////////*/
 
