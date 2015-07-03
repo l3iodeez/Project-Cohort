@@ -7,7 +7,7 @@
       t.references :user, index: true
       t.string :name
       t.string :race
-      t.text :classes ## [{"class" => "Bard", "level" => 5},{"class" => "Rogue", "level" => 2}]
+      t.text :ch_classes ## [{"class" => "Bard", "level" => 5},{"class" => "Rogue", "level" => 2}]
       t.integer :size
       t.string :sex
       t.string :height
