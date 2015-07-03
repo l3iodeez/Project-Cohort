@@ -54,6 +54,20 @@ p {
 	padding: 10px;
 }
 
+.screenshot-container {
+	position: ;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.screenshot-25 {
+	width: 25%;
+	display: inline-block;
+	vertical-align: top;
+	margin: 20px;
+}
+
 /*/////////////////HEADER/////////////////*/
 
 .logo {
