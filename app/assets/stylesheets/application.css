@@ -13,3 +13,187 @@
  *= require_tree .
  *= require_self
  */
+/*/////////////////FONTS/////////////////*/
+
+@font-face {
+	font-family: 'Nevis';
+	src: url(../fonts/nevis.ttf);
+}
+
+@font-face {
+	font-family: 'Neutra';
+	src: url(../fonts/NeutraDisp-Medium.otf);
+}
+
+*{
+	font-family: 'Nevis', Arial, sans-serif;
+}
+
+/*/////////////////HEADER/////////////////*/
+
+.logo {
+	background-image: url("Cohort.PNG");
+	background-repeat: no-repeat;
+	height: 150px;
+}
+
+.navbar {
+	width: auto;
+	height: 180px;
+	background-color: #93c47d; /*weird ooky green*/
+}
+
+.navbar, .logo {
+	padding-left: 20px;
+	padding-top: 10px;
+}
+
+menu {
+	display:inline;
+	position: absolute;
+	right: 10px;
+	top: 0px;
+	font-size: 0.65em;
+}
+
+/*/////////////////NAVIGATION/////////////////*/
+
+/* unvisited link */
+a {
+	color: #000;
+    text-decoration: none;
+}
+/* unvisited link */
+a:link {
+    color: #000;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #fd6b22; /*a most excellent orange*/
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: #93c47d; /*weird ooky green*/
+    text-decoration: none;
+}
+
+/*/////////////////LAYOUT/////////////////*/
+
+html, body {
+	background-color: #fff;
+	margin:0;
+	padding:0;
+}
+
+h1 {
+	font-family: 'Nevis', Arial, sans-serif;
+	font-size: 1.0em;
+}
+
+h2 {
+	font-family: 'Nevis', Arial, sans-serif;
+	font-size: 0.75em;
+}
+
+p {
+	font-family: 'Neutra', Arial, sans-serif;
+}
+
+.col-34 {
+	width: 34%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.col-66 {
+	width: 66%;
+	display: inline-block;
+	vertical-align: top;
+	background-color: #999999;
+	height: 500px;
+	float: right;
+}
+
+.col-34 p, .col-34 h1 {
+	padding: 10px;
+}
+
+.col-66 p, .col-66 h1 {
+	padding: 10px;
+}
+
+.screenshot-container {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	margin-top: 200px;
+}
+
+.screenshot-25 {
+	width: 25%;
+	display: inline-block;
+	background-color: #fff;
+	vertical-align: top;
+	margin-left: 3%;
+	margin-right: 3%;
+	padding: 5px;
+	box-shadow: 3px 3px 2px #282828;
+}
+
+.screenshot-25 img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.screenshot-25 h2 {
+	text-align: center;
+}
+
+ul li {
+	font-family: 'Neutra', Arial, sans-serif;
+	font-size: 0.8em;
+	padding-bottom: 10px;
+}
+
+/*/////////////////FOOTER/////////////////*/
+
+footer {
+	position: fixed;
+	width: 100%;
+	bottom: 0px;
+	background-color: #68868c; /*weird teal color*/
+}
+
+footer p {
+	text-align: center;
+	font-size: 0.85em;
+	color: #fff;
+}
+
+/*/////////////////BUTTONS/////////////////*/
+button {
+	display: inline-block;
+	background-color: #fd6b22; /*a most excellent orange*/
+	margin-left: 20px;
+	width: 90%;
+	height: 100px;
+	border: 0;
+}
+
+/*/////////////////RESPONSIVE/////////////////*/
+
+/*@media only screen and (max-width: 900px ) {
+
+}

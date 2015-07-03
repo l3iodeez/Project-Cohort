@@ -1,12 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" >
 <head>
-  <title>ProjectCohort</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+	<meta charset="UTF-8">
+	<title>Cohort</title>
+
+	<link rel="shortcut icon" href="favicon.ico" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+	 <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+     <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="navbar">
+		<div class="logo"></div>
+	</div>
+		<menu>
+			<a href="#">Dashboard </a>|
+			<a href="#">My Account </a>|
+			<a href="#">Sign Out </a>
+		</menu>
 
 <%= yield %>
 
