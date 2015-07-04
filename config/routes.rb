@@ -6,8 +6,8 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   
   root 'welcome#index'
-  devise_for :users
-  get ':username'=> 'internal#index'
+  devise_for :users, :controllers => { registrations: 'registrations' }
+  get '/:username/'=> 'internal#index', as: 'internal_page'
 
 
 
