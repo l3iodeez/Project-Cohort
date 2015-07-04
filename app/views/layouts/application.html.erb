@@ -16,10 +16,21 @@
 		<div class="logo"></div>
 	</div>
 		<menu>
-			<a href="#">Dashboard </a>|
-			<a href="#">My Account </a>|
-			<a href="#">Sign Out </a>
+			<% if user_signed_in? %>
+			  Logged in as <strong><%= current_user.email %></strong>.
+			  <%= link_to 'Edit profile', edit_user_registration_path %> |
+			  <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+			<% else %>
+			  <%= link_to "Sign up", new_user_registration_path  %> |
+			  <%= link_to "Login", new_user_session_path %>
+			<% end %>
 		</menu>
+<% if notice %>
+  <p class="notice"><%= notice %></p>
+<% end %>
+<% if alert %>
+  <p class="alert"><%= alert %></p>
+<% end %>
 
 <%= yield %><!--ruby that says whatever goes on this page goes here-->
 
