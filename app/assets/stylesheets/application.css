@@ -13,20 +13,24 @@
  *= require_tree .
  *= require_self
  */
-/*/////////////////FONTS/////////////////*/
+/*/////////////////FONTS & COLORS/////////////////*/
 
 @font-face {
 	font-family: 'Nevis';
-	src: url(../fonts/nevis.ttf);
+	src: url(nevis.ttf);
 }
 
 @font-face {
 	font-family: 'Neutra';
-	src: url(../fonts/NeutraDisp-Medium.otf);
+	src: url(NeutraDisp-Medium.otf);
 }
 
 *{
 	font-family: 'Nevis', Arial, sans-serif;
+}
+
+.excellentorange {
+	color: #fd6b22; /*a most excellent orange*/
 }
 
 /*/////////////////HEADER/////////////////*/
@@ -40,7 +44,7 @@
 .navbar {
 	width: auto;
 	height: 180px;
-	background-color: #93c47d; /*weird ooky green*/
+	background-color: #93c47d; /*ooky green*/
 }
 
 .navbar, .logo {
@@ -83,7 +87,7 @@ a:hover {
 
 /* selected link */
 a:active {
-    color: #93c47d; /*weird ooky green*/
+    color: #93c47d; /*ooky green*/
     text-decoration: none;
 }
 
@@ -173,7 +177,7 @@ footer {
 	position: fixed;
 	width: 100%;
 	bottom: 0px;
-	background-color: #68868c; /*weird teal color*/
+	background-color: #68868c; /*weird teal*/
 }
 
 footer p {
@@ -183,13 +187,27 @@ footer p {
 }
 
 /*/////////////////BUTTONS/////////////////*/
-button {
+.button1 {
 	display: inline-block;
 	background-color: #fd6b22; /*a most excellent orange*/
 	margin-left: 20px;
 	width: 90%;
 	height: 100px;
 	border: 0;
+	font-size: 1.2em;
+	color: #fff;
+}
+
+.button2 {
+	display: inline-block;
+	background-color: #68868c; /*weird teal*/
+	margin-left: 20px;
+	margin-top: 20px;
+	width: 90%;
+	height: 100px;
+	border: 0;
+	font-size: 1.2em;
+	color: #fff;
 }
 
 /*/////////////////RESPONSIVE/////////////////*/
