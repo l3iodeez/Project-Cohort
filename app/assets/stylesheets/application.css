@@ -17,12 +17,12 @@
 
 @font-face {
 	font-family: 'Nevis';
-	src: url(nevis.ttf);
+	src: url(fonts/nevis.ttf);
 }
 
 @font-face {
 	font-family: 'Neutra';
-	src: url(NeutraDisp-Medium.otf);
+	src: url(fonts/NeutraDisp-Medium.otf);
 }
 
 *{
@@ -36,7 +36,7 @@
 /*/////////////////HEADER/////////////////*/
 
 .logo {
-	background-image: url("Cohort.PNG");
+	background-image: url("images/Cohort.PNG");
 	background-repeat: no-repeat;
 	height: 150px;
 }
