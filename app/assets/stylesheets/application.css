@@ -17,12 +17,12 @@
 
 @font-face {
 	font-family: 'Nevis';
-	src: url(fonts/nevis.ttf);
+	src: url('/fonts/nevis.ttf');
 }
 
 @font-face {
 	font-family: 'Neutra';
-	src: url(fonts/NeutraDisp-Medium.otf);
+	src: url('/fonts/NeutraDisp-Medium.otf');
 }
 
 *{
