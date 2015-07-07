@@ -15,3 +15,10 @@
 /log/*
 !/log/.keep
 /tmp
+Dockerfile
+npm-debug.log
+.env
+Gemfile
+Gemfile
+config/database.yml
+Gemfile
