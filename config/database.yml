@@ -5,9 +5,10 @@
 #   gem 'sqlite3'
 #
 default: &default
-  adapter: sqlite3
+  adapter: postgresql
   pool: 5
   timeout: 5000
+  database: cohort
 
 development:
   adapter: postgresql
@@ -20,8 +21,8 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: db/test.sqlite3
+  database: cohort_test
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: cohort
