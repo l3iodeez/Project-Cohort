@@ -11,11 +11,105 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150704013704) do
+ActiveRecord::Schema.define(version: 20150711032507) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "characters", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "name"
+    t.string   "race"
+    t.json     "ch_classes"
+    t.integer  "size"
+    t.string   "sex"
+    t.string   "height"
+    t.string   "weight"
+    t.string   "eyes"
+    t.string   "skin"
+    t.string   "hair"
+    t.integer  "age"
+    t.string   "alignment"
+    t.string   "deity"
+    t.integer  "init"
+    t.json     "speed"
+    t.string   "languages"
+    t.json     "dr"
+    t.integer  "SR"
+    t.integer  "res_fire"
+    t.integer  "res_ice"
+    t.integer  "res_lightning"
+    t.integer  "res_acid"
+    t.integer  "res_sonic"
+    t.integer  "bonus_CMB"
+    t.integer  "BAB"
+    t.integer  "bonus_CMD"
+    t.integer  "STR"
+    t.integer  "DEX"
+    t.integer  "CON"
+    t.integer  "INT"
+    t.integer  "WIS"
+    t.integer  "CHA"
+    t.integer  "AC_armor"
+    t.integer  "AC_shield"
+    t.integer  "AC_dodge"
+    t.integer  "AC_natural"
+    t.integer  "AC_deflect"
+    t.integer  "AC_misc"
+    t.integer  "ACP"
+    t.integer  "max_HP"
+    t.integer  "current_HP"
+    t.integer  "temp_HP"
+    t.integer  "nonlethal"
+    t.integer  "fortitude"
+    t.integer  "reflex"
+    t.integer  "will"
+    t.integer  "temp_fortitude"
+    t.integer  "temp_reflex"
+    t.integer  "temp_will"
+    t.json     "acrobatics"
+    t.json     "appraise"
+    t.json     "bluff"
+    t.json     "climb"
+    t.json     "craft"
+    t.json     "diplomacy"
+    t.json     "disable_device"
+    t.json     "disguise"
+    t.json     "escape_artist"
+    t.json     "fly"
+    t.json     "handle_animal"
+    t.json     "heal"
+    t.json     "intimidate"
+    t.json     "knowledge"
+    t.json     "linguistics"
+    t.json     "perception"
+    t.json     "perform"
+    t.json     "profession"
+    t.json     "ride"
+    t.json     "sense_motive"
+    t.json     "slight_of_hand"
+    t.json     "spellcraft"
+    t.json     "stealth"
+    t.json     "survival"
+    t.json     "swim"
+    t.json     "use_magic_device"
+    t.json     "attacks"
+    t.json     "spells"
+    t.json     "abilities"
+    t.json     "description"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+  end
+
+  add_index "characters", ["user_id"], name: "index_characters_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
-    t.string   "username"
+    t.string   "username",                            null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
@@ -33,9 +127,9 @@ ActiveRecord::Schema.define(version: 20150704013704) do
     t.datetime "updated_at"
   end
 
-  add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
-  add_index "users", ["username"], name: "index_users_on_username"
+  add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+  add_index "users", ["username"], name: "index_users_on_username", unique: true, using: :btree
 
 end
