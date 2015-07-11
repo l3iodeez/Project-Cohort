@@ -4,8 +4,9 @@
 		<h1>Why, Hello World. Fancy meeting you here!</h1>
 		<p class="excellentorange"><strong>This site is definitely under construction right now.</strong></p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni repellat quo, sit modi nihil natus, reiciendis impedit aperiam commodi, quos similique id ullam quas ipsum quisquam a consequatur ut dolor?</p>
-		<button class="button1" type="submit"><%= link_to "Log In", new_user_session_path %></button>
-        <button class="button2" type="submit"><%= link_to "Sign Up", new_user_registration_path %></button>
+		
+		<%= link_to "Log In", new_user_session_path, class: "button1" %>
+        <%= link_to "Sign Up", new_user_registration_path, class: "button2" %>
 	</div>
 
 	<div class="col-66">

@@ -188,29 +188,33 @@ footer p {
 
 /*/////////////////BUTTONS/////////////////*/
 .button1 {
-	display: inline-block;
+	display: block;
 	background-color: #93c47d; /*ooky green*/
 	margin-left: 20px;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	width: 90%;
-	height: 100px;
 	border: 0;
 	font-size: 1.2em;
 	color: #fff;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 .button2 {
-	display: inline-block;
+	display: block;
 	background-color: #68868c; /*weird teal*/
 	margin-left: 20px;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	width: 90%;
-	height: 100px;
 	border: 0;
 	font-size: 1.2em;
 	color: #fff;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 /*/////////////////FORMS & FIELDS/////////////////*/
