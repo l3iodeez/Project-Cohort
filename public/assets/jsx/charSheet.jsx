@@ -51,7 +51,8 @@ var CharClasses = React.createClass({
 		return {newLevel : this.props.classes, schemata : tmpSchema}
 	},
 	updateSchemata: function(e) {
-		var changedClass = e.target.getAttribute("data");
+		var changedClass = e.target.dataset.classname;
+		//alert(changedClass);
 		var tmpSchemata = this.state.schemata;
 		//alert(schemata);
 		tmpSchemata[changedClass]["level"] = e.target.value;
@@ -72,8 +73,8 @@ var CharClasses = React.createClass({
 		var listClasses = function(cClass) {
 			return (
 				<span>
-					<span>{cClass.charClass} </span>
-					<input type="text" data={cClass.charClass} value={cClass.level} onChange={this.updateSchemata} />
+					<span>{cClass.charClass}</span>
+					<input type="text" data-classname={cClass.charClass} value={cClass.level} onChange={this.updateSchemata} />
 					<br />
 				</span>
 				);

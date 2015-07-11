@@ -15,3 +15,9 @@
 /log/*
 !/log/.keep
 /tmp
+Dockerfile
+npm-debug.log
+.env
+Gemfile
+config/database.yml
+
