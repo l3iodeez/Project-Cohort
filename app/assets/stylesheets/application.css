@@ -192,6 +192,7 @@ footer p {
 	background-color: #93c47d; /*ooky green*/
 	margin-left: 20px;
 	margin-top: 20px;
+	margin-bottom: 20px;
 	width: 90%;
 	height: 100px;
 	border: 0;
@@ -203,6 +204,8 @@ footer p {
 	display: inline-block;
 	background-color: #68868c; /*weird teal*/
 	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	width: 90%;
 	height: 100px;
 	border: 0;
@@ -214,6 +217,22 @@ footer p {
 .field {
 	margin-left: 20px;
 	font-family: 'Neutra', Arial, sans-serif;
+	font-size: 0.75em;
+	padding: 10px;
+}
+
+.actions {
+	margin-left: 20px;
+	font-family: 'Neutra', Arial, sans-serif;
+	font-size: 0.75em;
+	padding: 10px;
+}
+
+.links {
+	margin: 20px;
+	font-family: 'Neutra', Arial, sans-serif;
+	font-size: 0.75em;
+	padding: 10px;
 }
 
 /*/////////////////RESPONSIVE/////////////////*/
