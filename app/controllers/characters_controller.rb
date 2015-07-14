@@ -1,2 +1,2 @@
-class CharactersController < InternalController
+class CharactersController < ApplicationController
 end

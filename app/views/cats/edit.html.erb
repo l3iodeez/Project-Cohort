@@ -1,0 +1,6 @@
+<h1>Editing Cat</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', cat_path(current_user.username, @cat.id) %> |
+<%= link_to 'Back', cats_path %>

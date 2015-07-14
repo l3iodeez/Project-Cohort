@@ -6,8 +6,7 @@ class InternalController < ApplicationController
 		if params[:username] == current_user.username 
 
 	      else
-		      redirect_to root_path, 
-	          alert: "This is not your profile."	      	
+		     # redirect_to root_path, 	          alert: "This is not your profile."	      	
 		end
 
 	end
