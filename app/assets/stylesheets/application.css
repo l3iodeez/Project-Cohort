@@ -100,9 +100,10 @@ menu {
 }
 
 /*/////////////////INTERNAL NAVIGATION/////////////////*/
+/*this section is basically garbage until we figure out how to deal with internal pages*/
 .internal-navbar {
 	width: auto;
-	height: 180px;
+	height: 70px;
 	background-color: #93c47d; /*ooky green*/
 }
 
@@ -114,12 +115,12 @@ menu {
 .internal-menutabs {
 	display: inline-block;
 	position: absolute;
-	height: 190px;
-	width: 300px;
+	height: 80px;
+	width: 150px;
 	top: 0;
 	background-color: orange;
 }
-
+/*end garbage*/
 /*/////////////////LAYOUT/////////////////*/
 
 html, body {
