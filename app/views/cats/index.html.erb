@@ -18,7 +18,7 @@
         <td><%= cat.name %></td>
         <td><%= cat.race %></td>
         <td><% cat.ch_class.each_with_index do |cls, idx| %>
-            <%= cls[0] %> Level <%= cls[1] %> <%= idx < cat.ch_class.length - 1  ? "|" : nil %>
+            <%= cls['ch_class'] %> Level <%= cls['level'] %> <%= idx < cat.ch_class.length - 1  ? "|" : nil %>
             <% end %>
         </td>
          <td><%= cat.user.username %></td>
