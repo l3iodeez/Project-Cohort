@@ -1,0 +1,33 @@
+<%= form_for :cat, url: cat_path(current_user.id, @cat), method: :patch do |f| %>
+  <% if @cat.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cat.errors.count, "error") %> prohibited this cat from being saved:</h2>
+
+      <ul>
+      <% @cat.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :race %><br>
+    <%= f.text_field :race %>
+  </div>
+  <div class="field">
+    <%= f.label :ch_class %><br>
+    <%= f.text_field :ch_class, :value => (@cat.ch_class or "").to_json %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.hidden_field :user_id, :readonly => true, :value => current_user.id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -3,7 +3,7 @@
 one:
   name: MyString
   race: MyString
-  catClasses: 
+  catClasses:
 
 two:
   name: MyString

@@ -8,6 +8,7 @@ class InternalController < ApplicationController
 	      else
 		      redirect_to root_path,
 	          alert: "This is not your profile."
+
 		end
 
 	end

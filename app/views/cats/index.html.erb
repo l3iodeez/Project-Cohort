@@ -1,0 +1,35 @@
+
+<h1>Listing Cats</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Race</th>
+      <th>Ch class</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cats.each do |cat| %>
+      <tr>
+        <td><%= cat.name %></td>
+        <td><%= cat.race %></td>
+        <td><% cat.ch_class.each_with_index do |cls, idx| %>
+            <%= cls['ch_class'] %> Level <%= cls['level'] %> <%= idx < cat.ch_class.length - 1  ? "|" : nil %>
+            <% end %>
+        </td>
+         <td><%= cat.user.username %></td>
+        <td><%= link_to 'Show', cat_path(current_user.username, cat.id) %></td>
+        <td><%= link_to 'Edit', edit_cat_path(current_user.username, cat.id) %></td>
+        <td><%= link_to 'Destroy', cat_path(current_user.username, cat.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cat', new_cat_path %>
