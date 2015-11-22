@@ -1,3 +1,4 @@
+
 json.array!(@cats) do |cat|
   json.extract!(
   cat,

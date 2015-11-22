@@ -1,8 +1,9 @@
+<!--template for all pages-->
 <!DOCTYPE html>
 <html lang="en" >
 <head>
 	<meta charset="UTF-8">
-	<title>Cohort</title>
+	<title>Cohort - Tabletop RPG GM Companion App</title>
 
 
 	 <%= stylesheet_link_tag    'application', media: 'all' %>
@@ -11,7 +12,7 @@
 </head>
 <body>
 <div class="navbar">
-		<div class="logo"></div>
+		<%= link_to(image_tag('Cohort.PNG', :alt => 'logo'), root_path) %>
 	</div>
 		<menu>
 			<% if user_signed_in? %>
